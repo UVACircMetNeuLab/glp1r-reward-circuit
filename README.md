@@ -5,6 +5,21 @@ Analysis code and example datasets from the Güler lab for behavioral neuroscien
 This repository contains analysis code and toy datasets used to reproduce key steps of our pipeline for studying how GLP-1R agonists affect home cage behavior.  
 The code is written in Python and Jupyter notebooks, and toy datasets are provided so users can run the workflow without large raw data files.
 
+## Installation
+This project requires Python 3.11 and the packages listed in `environment.yml`.  
+To set up a conda environment with all dependencies:
+
+```bash
+# Create the environment
+conda env create -f environment.yml
+
+# Activate it
+conda activate glp1r-reward-circuit
+```
+
+All required packages, including numpy, pandas, matplotlib, networkx, h5py, and opencv-python, will be installed automatically.
+After activating the environment, you can run the notebooks as described below.
+
 ## Usage
 Run the notebooks in order with the provided toy datasets:
 
