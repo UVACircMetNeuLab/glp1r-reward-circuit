@@ -3,7 +3,10 @@ Analysis code and example datasets from the Güler lab for behavioral neuroscien
 
 ## Overview
 This repository contains analysis code and toy datasets used to reproduce key steps of our pipeline for studying how GLP-1R agonists affect home cage behavior.  
-The code is written in Python and Jupyter notebooks, and toy datasets are provided so users can run the workflow without large raw data files.
+The core pipeline is written in Python and Jupyter notebooks, with toy datasets provided for reproducibility.  
+
+Additional statistical analyses (e.g., PCA, MANOVA, permutation testing) are implemented in R for downstream interpretation of behavioral data. 
+Separate MATLAB scripts are included for fiber photometry data processing and calcium signal analysis from a different experiment within the same study.
 
 ## Installation
 This project requires Python 3.11 and the packages listed in `environment.yml`.  
@@ -51,4 +54,34 @@ Run the notebooks in order with the provided toy datasets:
 
 4. **visualization.ipynb**  
    - Generates select plots and figures from the processed dataset.
+  
+## Additional Analyses (R, MATLAB)
 
+The file `PCA_MANOVA.R` contains statistical analyses and visualizations performed on the processed behavioral dataset.  
+This script complements the Python pipeline by evaluating group-level effects in PCA space using multivariate statistics.
+
+Key steps include:
+- Principal Component Analysis (PCA) on standardized behavioral features
+- MANOVA using the `MANOVA.RM` package with parametric bootstrapping
+- Permutation tests on individual principal components
+- Visualizations: Scree plot, PCA scatter plots, confidence ellipses, loadings heatmap
+
+To run this script, open `PCA_MANOVA.R` in R (tested with R ≥ 4.2.0) and ensure required packages are installed:
+```r
+install.packages(c("MANOVA.RM", "tidyverse", "plotly", "scales"))
+```
+
+The file `GLMM_beta.R` contains statistical analyses performed on the processed behavioral dataset.  
+This script complements the Python pipeline by modeling pairwise group effects on the proportion of time spent performing 
+specific behaviors using beta regression.
+
+To run this script, open `GLMM_beta.R` in R (tested with R ≥ 4.2.0) and ensure required packages are installed:
+```r
+install.packages(c("glmmTMB", "tidyverse", "emmeans", "ggplot2"))
+```
+
+MATLAB: Fiber Photometry Signal Processing
+The MATLAB script `insert here` is provided for analyzing fiber photometry data from a different experiment within the same study. 
+These scripts include preprocessing of calcium signals, trial alignment, and extraction of event-related fluorescence changes.
+
+To run this script, open `insert here` in MATLAB (tested with v[insert version]) and ensure required packages are installed:
