@@ -85,8 +85,8 @@ MATLAB scripts for analyzing fiber photometry data from experiments in this stud
 dopamine signals.
 
 Available Scripts
-`GCaMP Calcium Events.m` – Analysis of calcium dynamics (related to Figure 4q–t).
-`Dopamine dLight Z Score.m` – Z-scored analysis of dopamine signals (related to Figure 5i–v).
+- `GCaMP Calcium Events.m` – Analysis of calcium dynamics (related to Figure 4q–t).
+- `Dopamine dLight Z Score.m` – Z-scored analysis of dopamine signals (related to Figure 5i–v).
 
 To run these scripts open the desired script in MATLAB (tested with version R2024b) and ensure that any required MATLAB 
 toolboxes/packages are installed.
