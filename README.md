@@ -66,7 +66,7 @@ Key steps include:
 - Permutation tests on individual principal components
 - Visualizations: Scree plot, PCA scatter plots, confidence ellipses, loadings heatmap
 
-To run this script, open `PCA_MANOVA.R` in R (tested with R ≥ 4.2.0) and ensure required packages are installed:
+To run this script, open `PCA_MANOVA.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
 ```r
 install.packages(c("MANOVA.RM", "tidyverse", "plotly", "scales"))
 ```
@@ -75,7 +75,7 @@ The file `GLMM_beta.R` contains statistical analyses performed on the processed 
 This script complements the Python pipeline by modeling pairwise group effects on the proportion of time spent performing 
 specific behaviors using beta regression.
 
-To run this script, open `GLMM_beta.R` in R (tested with R ≥ 4.2.0) and ensure required packages are installed:
+To run this script, open `GLMM_beta.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
 ```r
 install.packages(c("glmmTMB", "tidyverse", "emmeans", "ggplot2"))
 ```
