@@ -2,7 +2,7 @@
 Analysis code and example datasets from the Güler lab for behavioral neuroscience research.
 
 ## Overview
-This repository contains analysis code and toy datasets used to reproduce key steps of our pipeline for studying how GLP-1R agonists affect home cage behavior.  
+This repository contains analysis code and toy datasets used to reproduce key steps of our pipeline for studying how GLP-1R agonists affect home cage behavior (Figure 2).  
 The core pipeline is written in Python and Jupyter notebooks, with toy datasets provided for reproducibility.  
 
 Additional statistical analyses (e.g., PCA, MANOVA, permutation testing) are implemented in R for downstream interpretation of behavioral data. 
@@ -80,8 +80,13 @@ To run this script, open `GLMM_beta.R` in R (tested with R ≥ 4.1.2) and ensure
 install.packages(c("glmmTMB", "tidyverse", "emmeans", "ggplot2"))
 ```
 
-MATLAB: Fiber Photometry Signal Processing
-The MATLAB script `insert here` is provided for analyzing fiber photometry data from a different experiment within the same study. 
-These scripts include preprocessing of calcium signals, trial alignment, and extraction of event-related fluorescence changes.
+Fiber Photometry Signal Processing
+MATLAB scripts for analyzing fiber photometry data from experiments in this study. The provided scripts perform analysis of calcium and 
+dopamine signals.
 
-To run this script, open `insert here` in MATLAB (tested with v[insert version]) and ensure required packages are installed:
+Available Scripts
+`GCaMP Calcium Events.m` – Analysis of calcium dynamics (related to Figure 4q–t).
+`Dopamine dLight Z Score.m` – Z-scored analysis of dopamine signals (related to Figure 5i–v).
+
+To run these scripts open the desired script in MATLAB (tested with version R2024b) and ensure that any required MATLAB 
+toolboxes/packages are installed.
