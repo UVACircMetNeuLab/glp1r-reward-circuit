@@ -5,7 +5,7 @@ Analysis code and example datasets from the Güler lab for behavioral neuroscien
 This repository contains analysis code and toy datasets used to reproduce key steps of our pipeline for studying how GLP-1R agonists affect home cage behavior (Figure 2).  
 The core pipeline is written in Python and Jupyter notebooks, with toy datasets provided for reproducibility.  
 
-Additional statistical analyses (e.g., PCA, MANOVA, permutation testing) are implemented in R for downstream interpretation of behavioral data. 
+Additional statistical analyses (e.g., PCA) are implemented in R for downstream interpretation of behavioral data. 
 Separate MATLAB scripts are included for fiber photometry data processing and calcium signal analysis from a different experiment within the same study.
 
 ## Installation
