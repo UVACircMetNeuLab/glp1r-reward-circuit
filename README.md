@@ -57,27 +57,16 @@ Run the notebooks in order with the provided toy datasets:
   
 ## Additional Analyses (R, MATLAB)
 
-The file `PCA_MANOVA.R` contains statistical analyses and visualizations performed on the processed behavioral dataset.  
-This script complements the Python pipeline by evaluating group-level effects in PCA space using multivariate statistics.
+The file `PCA.R` contains analyses and visualizations performed on the processed behavioral dataset.  
+This script complements the Python pipeline.
 
 Key steps include:
 - Principal Component Analysis (PCA) on standardized behavioral features
-- MANOVA using the `MANOVA.RM` package with parametric bootstrapping
-- Permutation tests on individual principal components
-- Visualizations: Scree plot, PCA scatter plots, confidence ellipses, loadings heatmap
+- Visualizations: Scree plot, PCA scatter plots, loadings heatmap
 
-To run this script, open `PCA_MANOVA.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
+To run this script, open `PCA.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
 ```r
-install.packages(c("MANOVA.RM", "tidyverse", "plotly", "scales"))
-```
-
-The file `GLMM_beta.R` contains statistical analyses performed on the processed behavioral dataset.  
-This script complements the Python pipeline by modeling pairwise group effects on the proportion of time spent performing 
-specific behaviors using beta regression.
-
-To run this script, open `GLMM_beta.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
-```r
-install.packages(c("glmmTMB", "tidyverse", "emmeans", "ggplot2"))
+install.packages(c("tidyverse", "plotly", "scales"))
 ```
 
 Fiber Photometry Signal Processing
