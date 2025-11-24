@@ -25,8 +25,15 @@ After activating the environment, you can run the notebooks as described below.
 
 ## Usage
 Run the notebooks in order with the provided toy datasets:
-
-1. **locations.ipynb**  
+1. **Syllable_analysis.ipynb**
+   - Frequency analysis of MoSeq syllables
+   - Transition analysis of MoSeq syllables
+   - Loads the following datasets from the paper:
+     ```
+     syllable_stats_df.csv    # MoSeq syllable frequencies
+     syllable_df.csv          # MoSeq syllable data (indexed by frame of video)
+     ```
+2. **locations.ipynb**  
    - Identifies whether a mouse is in a region of interest (ROI) using keypoint coordinates from SLEAP.  
    - Loads the following toy datasets:  
      ```
@@ -34,7 +41,7 @@ Run the notebooks in order with the provided toy datasets:
      saline_orfo_arena2_2785_re_15s.mp4   # Cropped video corresponding to the .h5 file
      ```
 
-2. **location_behavior.ipynb**  
+3. **location_behavior.ipynb**  
    - Groups/names Keypoint-MoSeq syllables using ROI information.  
    - Loads the following toy datasets:  
      ```
@@ -49,10 +56,10 @@ Run the notebooks in order with the provided toy datasets:
      ```
      *Comments indicate the type of data in each file to help users understand how they are used in the notebook.*
 
-3. **build_dataset.ipynb**  
+4. **build_dataset.ipynb**  
    - Performs transition and bout analyses on the processed data.
 
-4. **visualization.ipynb**  
+5. **visualization.ipynb**  
    - Generates select plots and figures from the processed dataset.
   
 ## Additional Analyses (R, MATLAB)
