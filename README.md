@@ -30,8 +30,8 @@ Run the notebooks in order with the provided toy datasets:
    - Transition analysis of MoSeq syllables
    - Loads the following datasets from the paper:
      ```
-     syllable_stats_df.csv    # MoSeq syllable frequencies
-     syllable_df.csv          # MoSeq syllable data (indexed by frame of video)
+     syllable_stats_df.csv    # MoSeq syllable frequencies (from zipped folder)
+     syllable_df.csv          # MoSeq syllable data (from zipped folder)
      ```
 2. **locations.ipynb**  
    - Identifies whether a mouse is in a region of interest (ROI) using keypoint coordinates from SLEAP.  
