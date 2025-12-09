@@ -12,7 +12,9 @@ dependencies:
   - networkx>=3.1
   - h5py>=3.8
   - jupyterlab
+  - openpyxl
   - pip
   - pip:
       - opencv-python>=4.8
+
 
