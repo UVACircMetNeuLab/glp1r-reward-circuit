@@ -68,6 +68,12 @@ The file `PCA.R` contains analyses and visualizations performed on the processed
 This script complements the Python pipeline.
 
 Key steps include:
+   - Loads the following datasets:  
+     ```
+     behavior_time.csv            
+     normalized_transitions.csv
+     bouts.csv
+     ```
 - Principal Component Analysis (PCA) on standardized behavioral features
 - Visualizations: Scree plot, PCA scatter plots, loadings heatmap
 
