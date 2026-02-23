@@ -82,16 +82,17 @@ To run this script, open `PCA.R` in R (tested with R ≥ 4.1.2) and ensure requi
 install.packages(c("tidyverse", "plotly", "scales"))
 ```
 
-The file `bar_behavior_plots.R` generates raw and normalized behavioral bar plots used in Figure 2 and Selected Extended Data Figures.
+The file `bar_behavior_plots.R` generates raw and normalized behavioral bar plots used in Figure 2 and select Extended Data Figures 5-6 panels.
 
 Key steps include:
    - Loads the following datasets:  
      ```
-     behavior_time_dark_cycle.csv         
      sensor_data_dark_cycle.csv
+     behavior_time_dark_cycle.csv         
+     norm_transitions_dark_cycle.csv
+     bouts_dark_cycle.csv
      ```
    - Merge sensor-derived measures with behavioral summaries
-   - Compute raw behavioral values
    - Compute normalized behavioral values
    - Generate bar plots with individual mouse data points
 
