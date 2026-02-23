@@ -91,6 +91,7 @@ Key steps include:
      behavior_time_dark_cycle.csv         
      norm_transitions_dark_cycle.csv
      bouts_dark_cycle.csv
+     distance_new.csv
      ```
    - Merge sensor-derived measures with behavioral summaries
    - Compute normalized behavioral values
