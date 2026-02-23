@@ -101,6 +101,21 @@ To run this script, open `bar_behavior_plots.R` in R (tested with R ≥ 4.1.2) a
 install.packages(c("tidyverse", "ggplot2", "patchwork", "writexl", "scales"))
 ```
 
+The file `GLMM_beta_behavior.R` contains statistical models for proportional behavioral time data.
+Key steps include:
+  - Loads the following dataset:
+    ```
+    behavior_time_dark_cycle.csv         
+     ```
+  - Paired GLMM (vehicle vs. drug): beta regression with random intercept for mouse ID (within-subject)
+  - Multi-group GLMM (all drug groups vs. fed): beta regression with emmeans contrasts and Holm correction
+  - Link functions selected per-behavior based on distribution shape 
+
+To run this script, open `glmm_beta_regression.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
+```r
+install.packages(c("tidyverse", "glmmTMB", "emmeans", "ggplot2"))
+```
+
 Fiber Photometry Signal Processing
 MATLAB scripts for analyzing fiber photometry data from experiments in this study. The provided scripts perform analysis of calcium and 
 dopamine signals.
