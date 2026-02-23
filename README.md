@@ -82,6 +82,24 @@ To run this script, open `PCA.R` in R (tested with R ≥ 4.1.2) and ensure requi
 install.packages(c("tidyverse", "plotly", "scales"))
 ```
 
+The file `bar_behavior_plots.R` generates raw and normalized behavioral bar plots used in Figure 2 and Selected Extended Data Figures.
+
+Key steps include:
+   - Loads the following datasets:  
+     ```
+     behavior_time_dark_cycle.csv         
+     sensor_data_dark_cycle.csv
+     ```
+   - Merge sensor-derived measures with behavioral summaries
+   - Compute raw behavioral values
+   - Compute normalized behavioral values
+   - Generate bar plots with individual mouse data points
+
+To run this script, open `bar_behavior_plots.R` in R (tested with R ≥ 4.1.2) and ensure required packages are installed:
+```r
+install.packages(c("tidyverse", "ggplot2", "patchwork", "writexl", "scales"))
+```
+
 Fiber Photometry Signal Processing
 MATLAB scripts for analyzing fiber photometry data from experiments in this study. The provided scripts perform analysis of calcium and 
 dopamine signals.
