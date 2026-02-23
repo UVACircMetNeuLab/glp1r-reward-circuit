@@ -27,7 +27,8 @@ colnames(behavior_data)[3:8] <- c(
 
 behavior_data <- behavior_data %>%
   filter(!id %in% c(24, 11, 93)) %>%
-  # Normalize to proportion of total observed time (keep as 0-1 for beta reg.)
+  # Normalize to proportion of total observed time 
+  # (proportion of time each mouse spent doing X behavior relative to the total accounted time for that mouse)
   rowwise() %>%
   mutate(total_time = sum(c_across(c(
     total_drink, total_food, total_groom,
@@ -147,3 +148,4 @@ for (m in names(link_map)) {
   emm <- emmeans(model, ~ group)
   print(contrast(emm, method = "trt.vs.ctrl", ref = "fed", adjust = "holm"))
 }
+
