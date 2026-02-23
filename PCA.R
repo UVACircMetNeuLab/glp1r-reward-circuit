@@ -18,7 +18,7 @@ behavior_data <- read.csv("behavior_time_dark_cycle.csv") %>%
   select(-move.explore.sec, -move.explore...shelter.sec)
 
 # Grouped behavior transitions 
-transitions <- read_csv("transitions_dark_cycle.csv") %>% 
+transitions <- read_csv("norm_transitions_dark_cycle.csv") %>% 
   filter(group %in% c("dan_sd", "lira_sd", "orfo", "LiCl", "fed"))
 
 # Combine reciprocal transitions 
@@ -240,3 +240,4 @@ ggplot(loadings_long, aes(x = Principal_Component, y = behavior, fill = Loading)
     axis.text.x = element_text(angle = 45, hjust = 1),
     axis.text.y = element_text(size = 10)
   )
+
