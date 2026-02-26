@@ -59,8 +59,12 @@ Run the notebooks in order with the provided toy datasets:
 4. **build_dataset.ipynb**  
    - Performs transition and bout analyses on the processed data.
 
-5. **visualization.ipynb**  
-   - Generates select plots and figures from the processed dataset.
+5. **network_plot.ipynb**  
+   - Generates network plots from the processed dataset.
+   - Loads the following toy datasets:  
+     ```
+     normalized_transitions.csv  # Use this csv or toy data generated from build_dataset.ipynb 
+     ```
   
 ## Additional Analyses (R, MATLAB)
 
